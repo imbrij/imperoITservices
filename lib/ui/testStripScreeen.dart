@@ -99,14 +99,7 @@ class _TestStripScreen extends State<TestStripScreen> {
             ),
             Expanded(
               flex: 7,
-              child:
-                  /*ListView.builder(
-                itemCount: 5,
-                itemBuilder: (context, index) {
-                  return */
-                  Container(
-                /*  width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height*2,*/
+              child: Container(
                 child: Row(
                   children: <Widget>[
                     Expanded(
@@ -182,7 +175,7 @@ class _TestStripScreen extends State<TestStripScreen> {
                                         Container(
                                           margin: EdgeInsets.only(right: 5),
                                           height: 55,
-                                          width:80,
+                                          width: 80,
                                           child: TextFormField(
                                             textAlign: TextAlign.end,
                                             keyboardType: TextInputType.text,

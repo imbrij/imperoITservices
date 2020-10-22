@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 
-class LoggingInterceptor extends Interceptor{
-
+class LoggingInterceptor extends Interceptor {
   int _maxCharactersPerLine = 200;
 
   @override
@@ -19,14 +18,14 @@ class LoggingInterceptor extends Interceptor{
     String responseAsString = response.data.toString();
     if (responseAsString.length > _maxCharactersPerLine) {
       int iterations =
-      (responseAsString.length / _maxCharactersPerLine).floor();
+          (responseAsString.length / _maxCharactersPerLine).floor();
       for (int i = 0; i <= iterations; i++) {
         int endingIndex = i * _maxCharactersPerLine + _maxCharactersPerLine;
         if (endingIndex > responseAsString.length) {
           endingIndex = responseAsString.length;
         }
-        print(responseAsString.substring(
-            i * _maxCharactersPerLine, endingIndex));
+        print(
+            responseAsString.substring(i * _maxCharactersPerLine, endingIndex));
       }
     } else {
       print(response.data);
@@ -43,5 +42,4 @@ class LoggingInterceptor extends Interceptor{
     print(err.message);
     return super.onError(err);
   }
-
 }

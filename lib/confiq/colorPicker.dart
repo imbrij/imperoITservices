@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
 class ColorPicker {
-
   Color getColorFromHex(String hexColor) {
     if (hexColor.length >= 6) {
       hexColor = hexColor.replaceAll("#", "");

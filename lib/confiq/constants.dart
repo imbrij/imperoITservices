@@ -13,5 +13,5 @@ const testStripTitleTxt = TextStyle(
 
 const testStripSubTitle = TextStyle(fontSize: 14, color: Colors.black45);
 
-const testStripHeader = TextStyle(
-    fontSize: 34, color: Colors.purple, fontWeight: FontWeight.bold);
+const testStripHeader =
+    TextStyle(fontSize: 34, color: Colors.purple, fontWeight: FontWeight.bold);

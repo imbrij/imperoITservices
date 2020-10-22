@@ -10,11 +10,11 @@ class CategoryData {
 
   CategoryData(
       {this.id,
-        this.name,
-        this.isAuthorize,
-        this.update080819,
-        this.update130919,
-        this.subCategories});
+      this.name,
+      this.isAuthorize,
+      this.update080819,
+      this.update130919,
+      this.subCategories});
 
   CategoryData.fromJson(Map<String, dynamic> json) {
     id = json['Id'];

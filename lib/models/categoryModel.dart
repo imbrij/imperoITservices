@@ -11,7 +11,7 @@ class CategoryModel {
     status = json['Status'];
     message = json['Message'];
     result =
-    json['Result'] != null ? new ResultData.fromJson(json['Result']) : null;
+        json['Result'] != null ? new ResultData.fromJson(json['Result']) : null;
   }
 
   CategoryModel.withError(Map<String, dynamic> json) {
